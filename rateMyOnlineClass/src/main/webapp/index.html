@@ -1,0 +1,462 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>Rate My Online Class</title>
+</head>
+<body>
+
+
+<form action="WebApp" method="POST">
+<nav class="navbar navbar-inverse">
+
+  
+		<br><center><h1>Online Course Evaluation Survey</h1></center></br>
+		<br><center><h4>This survey has been created to understand the online learning experiences of students 
+		across all demographics and institutions of learning. Please take a moment to answer these questions.</h4></center></br>
+
+  
+	<br>
+	<h4>Course evaluation questions</h4>
+	<br>
+	1. What is the name of the online course you were enrolled in?
+	<input type="text" name="courseName"><br>
+	<br>
+	
+	<br>
+	2. Name of the course instructor?
+  <input type="text" name="instructorName"><br>
+	<br>
+	
+	<br>
+	3. What university/institution of learning was this course offered at?
+	<input type="text" name="universityName">
+	<br>
+	
+	<br>
+	4. How satisfied were you with this overall learning experience?<br>
+	<select id=satisfaction" name="satisfaction">
+  	<option value="verysatisfied">Very Satisfied</option>
+  	<option value="satisifed">Satisfied</option>
+  	<option value="netural">Neutral</option>
+  	<option value="disatisfied">Disatisfied</option>
+  	<option value="verydisatified">Very Disatisfied</option>
+	</select>
+	<br>
+	
+	<br>
+	5. Rate this course's difficulty:<br>
+	<select id=difficulty" name="difficulty">   
+  	<option value="veryeasy">Very Easy</option>
+  	<option value="easy">Easy</option>
+  	<option value="normal">Normal</option>
+  	<option value="hard">Hard</option>
+  	<option value="veryhard">Very Hard</option>
+	</select>
+	<br>
+	
+	<br>
+	6. What year were you enrolled in this course?
+	<input type="text" name="enrollYear">
+	<br>
+	
+	<br>
+	7. What grade do you receive?<br>
+	<select id=gradeReceived" name="gradeReceived">   
+  	<option value="A">A</option>
+  	<option value="B">B</option>
+  	<option value="C">C</option>
+  	<option value="D">D</option>
+  	<option value="F">F</option>
+  	<option value="Withdrew from course">Withdrew from course</option>
+	</select>	
+	<br>
+     
+	<br>
+	8. Describe your experience in this course (500 words or less)<br>
+	<input type="textarea" maxlength="500" name="message" rows="10" cols="70" name="describExp"> 
+	<br>
+	
+	<br>
+	<h4>Personal questions</h4>
+	<br>
+    <tr><td> 9. How would you describe your racial or ethnic group?<br>
+	<input type="radio" name="race" value="asian" > Asian<br>
+    <input type="radio" name="race" value="black"> Black/African American<br>
+    <input type="radio" name="race" value="white"> White<br>
+    <input type="radio" name="race" value="nativeA"> Native American/Alaska Native<br>
+    <input type="radio" name="race" value="nativeH"> Native Hawaiian/Pacific Islander<br>
+    <input type="radio" name="race" value="mixed"> Multiple races<br>
+    <input type="radio" name="race" value="mixed">Other<br>
+	
+
+   <tr><td><br>10. Are you Hispanic or Latino? <br>
+   <input type="radio" name="hisp" value="yesHispanic" > Yes
+   <input type="radio" name="hisp" value="notHispanic"> No
+   <br>
+   
+	<tr><td><br>    	
+	11. Which country do you live in?<br> 
+	<select id=country" name="country">
+	<option value="" disabled selected>Select your option</option>
+	<option value="Afghanistan">Afghanistan</option>
+	<option value="Albania">Albania</option>
+	<option value="Algeria">Algeria </option>
+	<option value="Andorra">Andorra </option>
+	<option value="Angola">Angola </option>
+	<option value="Anguilla">Anguilla</option>
+	<option value="Antigua & Barbuda">Antigua & Barbuda</option>
+	<option value="Argentina">Argentina</option>
+	<option value="Armenia">Armenia</option>
+	<option value="Australia">Australia</option>
+	<option value="Austria">Austria</option>
+	<option value="Azerbaijan">Azerbaijan</option>
+	<option value="Bahamas">Bahamas</option>
+	<option value="Bahrain"> Bahrain</option>
+	<option value="Bangladesh">Bangladesh </option>
+	<option value="Barbados">Barbados</option>
+	<option value="Belarus">Belarus</option>
+	<option value="Belgium">Belgium </option>
+	<option value="Belize">Belize</option>
+	<option value="Benin">Benin</option>
+	<option value="Bermuda">Bermuda</option>
+	<option value="Bhutan">Bhutan</option>
+	<option value="Bolivia">Bolivia</option>
+	<option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+	<option value="Botswana">Botswana</option>
+	<option value="Brazil">Brazil</option>
+	<option value="Brunei Darussalam">Brunei Darussalam</option>
+	<option value="Bulgaria">Bulgaria</option>
+	<option value="Burkina Faso">Burkina Faso</option>
+	<option value="Burundi">Burundi</option>
+	
+	<option value="Cambodia">Cambodia </option>
+	<option value="Cameroon"> Cameroon</option>
+	<option value="Canada"> Canada</option>
+	<option value="Cape Verde">Cape Verde</option>
+	<option value="Cayman Islands">Cayman Islands</option>
+	<option value="Central African Republic">Central African Republic</option>
+	<option value="Chad">Chad </option>
+	<option value="Chile">Chile </option>
+	<option value="China">China </option>
+	<option value="China - Hong Kong / Macau">China - Hong Kong / Macau</option>
+	<option value="Colombia">Colombia</option>
+	<option value="Comoros">Comoros</option>
+	<option value="Congo">Congo</option>
+	<option value="Congo, Democratic Republic of (DRC)">Congo, Democratic Republic of (DRC)</option>
+	<option value="Costa Rica">Costa Rica</option>
+	<option value="Croatia">Croatia</option>
+	<option value="Cuba">Cuba</option>
+	<option value="Cyprus">Cyprus</option>
+	<option value="Czech Republic">Czech Republic</option>
+	
+	<option value="Denmark">Denmark</option>
+	<option value="Djibouti">Djibouti</option>
+	<option value="Dominica">Dominica</option>
+	<option value="Dominican Republic">Dominican Republic</option>
+	
+	<option value="Ecuador">Ecuador</option>
+	<option value="Egypt">Egypt</option>
+	<option value="El Salvador">El Salvador</option>
+	<option value="Equatorial Guinea">Equatorial Guinea</option>
+	<option value="Eritrea">Eritrea</option>
+	<option value="Estonia">Estonia</option>
+	<option value="Eswatini">Eswatini</option>
+	<option value="Ethiopia">Ethiopia</option>
+	
+	<option value="Fiji">Fiji</option>
+	<option value="Finland">Finland</option>
+	<option value="France">France</option>
+	<option value="French Guiana">French Guiana</option>
+	
+	<option value="Gabon">Gabon </option>
+	<option value="Gambia, Republic of The">Gambia, Republic of The</option>
+	<option value="Georgia">Georgia </option>
+	<option value="Germany">Germany</option>
+	<option value="Ghana">Ghana</option>
+	<option value="Great Britain">Great Britain</option>
+	<option value="Greece">Greece</option>
+	<option value="Grenada">Grenada</option>
+	<option value="Guadeloupe">Guadeloupe</option>
+	<option value="Guatemala">Guatemala</option>
+	<option value="Guinea">Guinea</option>
+	<option value="Guinea-Bissau">Guinea-Bissau</option>
+	<option value="Guyana">Guyana</option>
+	
+	<option value="Haiti">Haiti </option>
+	<option value="Honduras">Honduras </option>
+	<option value="Hungary">Hungary </option>
+	
+	<option value="Iceland">Iceland</option>
+	<option value="India">India</option>
+	<option value="Indonesia">Indonesia</option>
+	<option value="Iran">Iran</option>
+	<option value="Iraq">Iraq</option>
+	<option value="Israel">Israel</option>
+	<option value="Italy">Italy</option>
+	<option value="Ivory Coast">Ivory Coast</option>
+	
+	<option value="Jamaica">Jamaica </option>
+	<option value="Japan">Japan </option>
+	<option value="Jordan">Jordan </option>
+	
+	<option value="Kazakhstan">Kazakhstan </option>
+	<option value="Kenya">Kenya</option>
+	<option value="North Korea">North Korea</option>
+	<option value="South Korea">South Korea </option>
+	<option value="Kosovo">Kosovo</option>
+	<option value="Kuwait">Kuwait</option>
+	<option value=Kyrgyz Republic (Kyrgyzstan)>Kyrgyzstan</option>
+	
+	<option value="Laos"> Laos</option>
+	<option value="Latvia"> Latvia</option>
+	<option value="Lebanon">Lebanon</option>
+	<option value="Lesotho">Lesotho</option>
+	<option value="Liberia">Liberia</option>
+	<option value="Libya">Libya</option>
+	<option value="Liechtenstein">Liechtenstein </option>
+	<option value="Lithuania">Lithuania</option>
+	<option value="Luxembourg">Luxembourg</option>
+	
+	<option value="Madagascar">Madagascar </option>
+	<option value="Malawi">Malawi </option>
+	<option value="Malaysia">Malaysia </option>
+	<option value="Maldives">Maldives </option>
+	<option value="Mali">Mali</option>
+	<option value="Malta">Malta</option>
+	<option value="Martinique">Martinique</option>
+	<option value="Mauritania">Mauritania</option>
+	<option value="Mauritius">Mauritius</option>
+	<option value="Mayotte">Mayotte</option>
+	<option value="Mexico">Mexico</option>
+	<option value="Moldova, Republic of"> </option>
+	<option value="Monaco">Monaco</option>
+	<option value="Mongolia">Mongolia</option>
+	<option value="Montenegro">Montenegro</option>
+	<option value="Montserrat">Montserrat</option>
+	<option value="Morocco">Morocco</option>
+	<option value="Mozambique">Mozambique</option>
+	<option value="Myanmar/Burma">Myanmar/Burma</option>
+	
+	<option value="Namibia">Namibia </option>
+	<option value="Nepal">Nepal </option>
+	<option value="New Zealand">New Zealand </option>
+	<option value="Nicaragua">Nicaragua </option>
+	<option value="Niger">Niger </option>
+	<option value="Nigeria">Nigeria </option>
+	<option value="North Macedonia, Republic of"> </option>
+	<option value="Norway">Norway </option>
+	
+	<option value="Oman">Oman </option>
+	
+	
+	Pacific Islands
+	Pakistan
+	Panama
+	Papua New Guinea
+	Paraguay
+	Peru
+	Philippines
+	Poland
+	Portugal
+	Puerto Rico
+	
+	Qatar
+	
+	Reunion
+	Romania
+	Russian Federation
+	Rwanda
+	
+	Saint Kitts and Nevis
+	Saint Lucia
+	Saint Vincent and the Grenadines
+	Samoa
+	Sao Tome and Principe
+	Saudi Arabia
+	Senegal
+	Serbia
+	Seychelles
+	Sierra Leone
+	Singapore
+	Slovak Republic (Slovakia)
+	Slovenia
+	Solomon Islands
+	Somalia
+	South Africa
+	South Sudan
+	Spain
+	Sri Lanka
+	Sudan
+	Suriname
+	Sweden
+	Switzerland
+	Syria
+	
+	Tajikistan
+	Tanzania
+	Thailand
+	
+	Netherlands
+	
+	Timor Leste
+	Togo
+	Trinidad & Tobago
+	Tunisia
+	Turkey
+	Turkmenistan
+	Turks & Caicos Islands
+	
+	Uganda
+	Ukraine
+	United Arab Emirates
+	United States of America (USA)
+	Uruguay
+	Uzbekistan
+	
+	Venezuela
+	Vietnam
+	Virgin Islands (UK)
+	Virgin Islands (US)
+	
+	Yemen
+	
+	Zambia
+	Zimbabwe
+		</select>
+		<br>
+	
+	<br>
+	12. Which age group are you in?<br>
+	<select id=agegroup" name="agegroup">   
+  	<option value="12orYounger">12 years old or younger</option>
+  	<option value="13-17">13-17 years old</option>
+  	<option value="18-24">18-24 years old</option>
+  	<option value="25-34">25-34 years old</option>
+  	<option value="35-44">35-44 years old</option>
+  	<option value="45-54">45-54 years old</option>
+  	<option value="55-64">55-64 years old</option>
+  	<option value="65-74">65-74 years old</option>
+  	<option value="75">75 years or older</option>
+	</select>
+	<br>
+	
+	<br>
+	13. Are you Male or Female?<br>
+    <input type="radio" name="gender" value="M"> Male
+    <input type="radio" name="gender" value="F">Female
+	<br>
+	
+	<br>
+	14. Are you married?<br>
+	<input type="radio" name="married" value="Married"> Yes
+    <input type="radio" name="married" value="Unmarried">No
+	<br>
+	
+	
+	<br>
+	15. What is your annual salary?<br>
+	<select id=salary" name="salary">   
+  	<option value="$0-$24,999">$0-$24,999</option>
+  	<option value="$25,000-$49,999">$25,000-$49,999</option>
+  	<option value="$50,000-$74,999">$50,000-$74,999</option>
+  	<option value="$75,000-$99,999">$75,000-$99,999</option>
+  	<option value="$100,000-$124,999">$100,000-$124,999</option>
+  	<option value="$125,000-$149,999">$125,000-$149,999</option>
+  	<option value="$150,000-$174,999">$150,000-$174,999</option>
+  	<option value="$175,000-$199,999">$175,000-$199,999</option>
+  	<option value="$200,000 and up">$200,000 and up</option>
+	</select>
+	<br>
+	
+	<br>
+	16. How many hours week do you work?<br>
+	<select id=workHours" name="workHours">   
+	<option value="0" >0</option>
+  	<option value="1-5">1-5</option>
+  	<option value="6-10">6-10</option>
+  	<option value="11-15">11-15</option>
+  	<option value="16-20">16-20</option>
+  	<option value="21-25">21-25</option>
+  	<option value="26-30">26-30</option>
+  	<option value="31-35">31-35</option>
+  	<option value="36-40">36-40</option>
+  	<option value="morethan40">More than 40</option>
+	</select>
+	<br>
+	
+	<br> 
+	17. How many children do you have?<br>
+	<select id=numOfChildren" name="numOfChildren">   
+	<option value="zero">0</option>
+  	<option value="one">1</option>
+  	<option value="two">2</option>
+  	<option value="three">3</option>
+  	<option value="four">4</option>
+  	<option value="five">5</option>
+  	<option value="sixorMore"> 6 or more</option>
+	</select>
+	<br>
+	
+	<h4>Prior learning experience/Technical skill questions</h4>
+	<br>
+	18. Rate your proficiency using the Internet/computer technology.<br>
+	<select id=cpuSkill" name="cpuSkill">   
+	<option value="poor">Poor</option>
+  	<option value="belowAverage">Below Average</option>
+  	<option value="average">Average</option>
+  	<option value="aboveAverage">Above Average</option>
+  	<option value="excellent">Excellent</option>
+	</select>
+	<br>
+	
+	<br>
+	19.Which is the highest level of education you have attained?<br>
+	<select id=eduLevel" name="eduLevel">   
+  	<option value="lessThanHS">Less than high school degree</option>
+  	<option value="HighSchool">High School degree/GED</option>
+  	<option value="someCollege">Some college</option>
+  	<option value="AsscDegree">Associate degree</option>
+  	<option value="BachsDegree">Bachelor's degree</option>
+  	<option value="MastersDegree">Master's degree</option>
+  	<option value="PHD">PHD</option>
+	</select>
+	<br>
+	
+	<br>
+	20. Have you taken an online course before?<br>
+	<input type="radio" name="takenOnline" value="takenCourseBefore"> Yes
+    <input type="radio" name="takenOnline" value="nevertakenCourseBefore">No
+	<br>
+	
+	<br>
+	21. Would you consider taking another online course?<br>
+	<input type="radio" name="anotherOnlineCourse" value="willConsider"> Yes
+    <input type="radio" name="anotherOnlineCourse" value="wontConsider">No
+	<br>
+	
+	<br> 
+	22. How would you best describe your learning style?<br>
+	<input type="radio" name="learningStyle" value="Reading/Writing">Reading/Writing
+    <input type="radio" name="learningStyle" value="Auditory">Auditory
+    <input type="radio" name="learningStyle" value="Visual">Visual
+    <input type="radio" name="learningStyle" value="Kinesthetic"> Kinesthetic(Hand's on)
+	<br>
+	
+	
+	<br>
+	23. What learning format do you most prefer?</br>
+	<input type="radio" name="learnPref" value="classroom" > Traditional Classroom
+    <input type="radio" name="learnPref" value="online"> Online Learning
+    <input type="radio" name="learnPref" value="hybrid"> A combination of both (Hybrid Learning)
+	<br>
+	
+	<br>
+	<input type="checkbox" name="consent" value="agreeToConsent"> I acknowledge that my identify will remain confidential but my responses to these survey questions will be publically displayed ont <br>
+	<br> 
+	
+<tr><td><input type="submit" name="submit" value="Submit"></td></tr>
+</form>
+</body>
+</html>

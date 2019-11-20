@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rate My Online Class</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+<p align="left">RATE MY ONLINE CLASS</p>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="homepage.html">Home</a></li>
+        <li><a href="test.html">Submit an Online Class Review</a></li>
+        <li><a href="NewFile.jsp">Search for a Class Review</a></li>
+        <li><a href="demographicInfo.html">View Survey Taker Demographics</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+.container1 {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+
+<div class="container1">
+  <div class="row">
+   
+   <form action="homepage.html" method="POST" onSubmit="alert('Survey complete! Thank you for your responses.')">
+<nav class="navbar navbar-inverse">
+
+
+  
+	<br><center><h1>Online Course Evaluation Survey</h1></center></br>
+	<br><center><h4>Answer the following questions below to provide insight into your learning experience in a specific online course.</h4></center></br>
+
+	<br>
+	<h4>Section I: Online Course Evaluation</h4>
+	<h6>This section asks questions about your learning experience in a specific course.
+	Please answer all questions.</h6>
+
+<script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+
+	<br>
+	1. What is the name of the online course you were enrolled in?<br>
+	<input type="text" name="courseName" class="q1" required placeholder="e.g. CS6460: Educational Technology" style="color:#000">
+	<br>
+	
+	<style>.q1 {width: 300px; height: 30px}</style>
+		
+	<br>
+	2. What was the course instructor's name?<br>
+  	<input type="text" name="instructorName" class="q2" required placeholder="e.g. Dr. Mark Adams" style="color:#000"><br>
+	<br>
+	<style>.q2 {width: 300px; height: 30px}</style>
+	
+	
+	<br>
+	3. What university/institution of learning was this course offered at?<br>
+	<input type="text" name="universityName" required class="q3" placeholder="e.g. University of Richmond" style="color:#000" "width=70">
+	<br>
+	<style>.q3 {width: 300px; height: 30px}</style>
+	
+	
+	<br>
+	4. How satisfied were you with this overall learning experience?<br>
+	<select id=satisfaction" name="satisfaction" required style="color:#000" >
+	<option value="" disabled selected>Select course satisfaction</option>
+  	<option value="Very Satisfied">Very Satisfied</option>
+  	<option value="Satisifed">Satisfied</option>
+  	<option value="Netural">Neutral</option>
+  	<option value="Dissatisfied">Dissatisfied</option>
+  	<option value="Very Dissatified">Very Dissatisfied</option>
+	</select>
+	<br>
+	
+	<br>
+	5. Rate this course's difficulty:<br>
+	<select id=difficulty" name="difficulty" required style="color:#000">  
+	<option value="" disabled selected>Select course difficulty</option> 
+  	<option value="Very Easy">Very Easy</option>
+  	<option value="Easy">Easy</option>
+  	<option value="Normal">Normal</option>
+  	<option value="Hard">Hard</option>
+  	<option value="Very Hard">Very Hard</option>
+	</select>
+	<br>
+	
+	<br>
+	6. What year were you enrolled in this course?<br>
+	<input type="text" name="enrollYear" required placeholder="e.g. 2019" style="color:#000">
+	<br>
+	
+	<br>
+	7. What grade did you receive?<br>
+	<select id=gradeReceived" name="gradeReceived" required style="color:#000">   
+	<option value="" disabled selected>Select grade received</option>
+  	<option value="A">A</option>
+  	<option value="B">B</option>
+  	<option value="C">C</option>
+  	<option value="D">D</option>
+  	<option value="F">F</option>
+  	<option value="Withdrew from course">Withdrew from course</option>
+	</select>	
+	<br>
+     
+	<br>
+	8. Describe your experience in this course (1000 words or less)<br>
+    <textarea rows="8" cols="80" maxlength="1000" name="describExp" required placeholder="What did you like and or dislike about this course? " style="color:#000"></textarea>
+	<br>
+	
+	
+	  <script>
+  	  function otherVisible() {
+  	    if (document.getElementById('radioOther').checked==true) 
+  	    {
+  	        document.getElementById('yesOther').style.visibility = 'visible';
+  	    }
+  	  }
+  	  </script>
+  	
+	
+	<br>
+	<h4>Section II: Student Demographic Information</h4>
+	<h6>This section asks a few demographic questions to better understand you as a student. Please answer all questions.</h6>
+	<br>
+    <tr><td> 9. How would you describe your racial or ethnic group?<br>
+	<input type="radio" name="race" value="Asian" required style="color:#000"> Asian<br>
+    <input type="radio" name="race" value="Black" required style="color:#000"> Black/African American<br>
+    <input type="radio" name="race" value="White" required style="color:#000"> White<br>
+    <input type="radio" name="race" value="NativeA" required style="color:#000"> Native American/Alaska Native<br>
+    <input type="radio" name="race" value="NativeH" required style="color:#000"> Native Hawaiian/Pacific Islander<br>
+    <input type="radio" name="race" value="Mixed" required style="color:#000"> Multiple races<br>
+    <input type="radio" name="race" id="radioOther" value=" " onclick="javascript:otherVisible();" required style="color:#000">Other   <input type="text" onchange="javascript:foo();" name="race" id="yesOther" value=" " style="color:#000; visibility:hidden" name="otherWriteIn"><br>
+	
+
+	
+   <tr><td><br>10. Are you Hispanic or Latino? <br>
+   <input type="radio" name="hisp" required value="yesHispanic" > Yes
+   <input type="radio" name="hisp"  required value="notHispanic"> No
+   <br>
+   
+	<tr><td><br>    	
+	11. Which country do you live in?<br> 
+	<select id=country" name="country" required style="color:#000">
+	<option value="" disabled selected>Select a country</option>
+	<option value="Afghanistan">Afghanistan</option>
+	<option value="Albania">Albania</option>
+	<option value="Algeria">Algeria </option>
+	<option value="Andorra">Andorra </option>
+	<option value="Angola">Angola </option>
+	<option value="Anguilla">Anguilla</option>
+	<option value="Antigua & Barbuda">Antigua & Barbuda</option>
+	<option value="Argentina">Argentina</option>
+	<option value="Armenia">Armenia</option>
+	<option value="Australia">Australia</option>
+	<option value="Austria">Austria</option>
+	<option value="Azerbaijan">Azerbaijan</option>
+	<option value="Bahamas">Bahamas</option>
+	<option value="Bahrain"> Bahrain</option>
+	<option value="Bangladesh">Bangladesh </option>
+	<option value="Barbados">Barbados</option>
+	<option value="Belarus">Belarus</option>
+	<option value="Belgium">Belgium </option>
+	<option value="Belize">Belize</option>
+	<option value="Benin">Benin</option>
+	<option value="Bermuda">Bermuda</option>
+	<option value="Bhutan">Bhutan</option>
+	<option value="Bolivia">Bolivia</option>
+	<option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+	<option value="Botswana">Botswana</option>
+	<option value="Brazil">Brazil</option>
+	<option value="Brunei Darussalam">Brunei Darussalam</option>
+	<option value="Bulgaria">Bulgaria</option>
+	<option value="Burkina Faso">Burkina Faso</option>
+	<option value="Burundi">Burundi</option>
+	
+	<option value="Cambodia">Cambodia </option>
+	<option value="Cameroon"> Cameroon</option>
+	<option value="Canada"> Canada</option>
+	<option value="Cape Verde">Cape Verde</option>
+	<option value="Cayman Islands">Cayman Islands</option>
+	<option value="Central African Republic">Central African Republic</option>
+	<option value="Chad">Chad </option>
+	<option value="Chile">Chile </option>
+	<option value="China">China </option>
+	<option value="China - Hong Kong / Macau">China - Hong Kong / Macau</option>
+	<option value="Colombia">Colombia</option>
+	<option value="Comoros">Comoros</option>
+	<option value="Congo">Congo</option>
+	<option value="Congo, Democratic Republic of (DRC)">Congo, Democratic Republic of (DRC)</option>
+	<option value="Costa Rica">Costa Rica</option>
+	<option value="Croatia">Croatia</option>
+	<option value="Cuba">Cuba</option>
+	<option value="Cyprus">Cyprus</option>
+	<option value="Czech Republic">Czech Republic</option>
+	<option value="Denmark">Denmark</option>
+	<option value="Djibouti">Djibouti</option>
+	<option value="Dominica">Dominica</option>
+	<option value="Dominican Republic">Dominican Republic</option>
+	<option value="Ecuador">Ecuador</option>
+	<option value="Egypt">Egypt</option>
+	<option value="El Salvador">El Salvador</option>
+	<option value="Equatorial Guinea">Equatorial Guinea</option>
+	<option value="Eritrea">Eritrea</option>
+	<option value="Estonia">Estonia</option>
+	<option value="Eswatini">Eswatini</option>
+	<option value="Ethiopia">Ethiopia</option>
+	<option value="Fiji">Fiji</option>
+	<option value="Finland">Finland</option>
+	<option value="France">France</option>
+	<option value="French Guiana">French Guiana</option>
+	<option value="Gabon">Gabon </option>
+	<option value="Gambia, Republic of The">Gambia, Republic of The</option>
+	<option value="Georgia">Georgia </option>
+	<option value="Germany">Germany</option>
+	<option value="Ghana">Ghana</option>
+	<option value="Great Britain">Great Britain</option>
+	<option value="Greece">Greece</option>
+	<option value="Grenada">Grenada</option>
+	<option value="Guadeloupe">Guadeloupe</option>
+	<option value="Guatemala">Guatemala</option>
+	<option value="Guinea">Guinea</option>
+	<option value="Guinea-Bissau">Guinea-Bissau</option>
+	<option value="Guyana">Guyana</option>
+	<option value="Haiti">Haiti </option>
+	<option value="Honduras">Honduras </option>
+	<option value="Hungary">Hungary </option>
+	<option value="Iceland">Iceland</option>
+	<option value="India">India</option>
+	<option value="Indonesia">Indonesia</option>
+	<option value="Iran">Iran</option>
+	<option value="Iraq">Iraq</option>
+	<option value="Israel">Israel</option>
+	<option value="Italy">Italy</option>
+	<option value="Ivory Coast">Ivory Coast</option>
+	<option value="Jamaica">Jamaica </option>
+	<option value="Japan">Japan </option>
+	<option value="Jordan">Jordan </option>
+	<option value="Kazakhstan">Kazakhstan </option>
+	<option value="Kenya">Kenya</option>
+	<option value="North Korea">North Korea</option>
+	<option value="South Korea">South Korea </option>
+	<option value="Kosovo">Kosovo</option>
+	<option value="Kuwait">Kuwait</option>
+	<option value="Kyrgyz Republic (Kyrgyzstan)">Kyrgyzstan</option>
+	<option value="Laos"> Laos</option>
+	<option value="Latvia"> Latvia</option>
+	<option value="Lebanon">Lebanon</option>
+	<option value="Lesotho">Lesotho</option>
+	<option value="Liberia">Liberia</option>
+	<option value="Libya">Libya</option>
+	<option value="Liechtenstein">Liechtenstein </option>
+	<option value="Lithuania">Lithuania</option>
+	<option value="Luxembourg">Luxembourg</option>
+	<option value="Madagascar">Madagascar </option>
+	<option value="Malawi">Malawi </option>
+	<option value="Malaysia">Malaysia </option>
+	<option value="Maldives">Maldives </option>
+	<option value="Mali">Mali</option>
+	<option value="Malta">Malta</option>
+	<option value="Martinique">Martinique</option>
+	<option value="Mauritania">Mauritania</option>
+	<option value="Mauritius">Mauritius</option>
+	<option value="Mayotte">Mayotte</option>
+	<option value="Mexico">Mexico</option>
+	<option value="Moldova, Republic of">Moldova</option>
+	<option value="Monaco">Monaco</option>
+	<option value="Mongolia">Mongolia</option>
+	<option value="Montenegro">Montenegro</option>
+	<option value="Montserrat">Montserrat</option>
+	<option value="Morocco">Morocco</option>
+	<option value="Mozambique">Mozambique</option>
+	<option value="Myanmar/Burma">Myanmar/Burma</option>
+	<option value="Namibia">Namibia</option>
+	<option value="Nepal">Nepal</option>
+	<option value="New Zealand">New Zealand</option>
+	<option value="Nicaragua">Nicaragua</option>
+	<option value="Niger">Niger</option>
+	<option value="Nigeria">Nigeria</option>
+	<option value="North Macedonia, Republic of">North Macedonia</option>
+	<option value="Norway">Norway </option>
+	<option value="Oman">Oman </option>
+	<option value="Pacific Islands">Pacific Islands</option>
+	<option value="Pakistan">Pakistan </option>
+	<option value="Panama">Panama</option>
+	<option value="Papua New Guinea">Papua New Guinea</option>
+	<option value="Paraguay">Paraguay</option>
+	<option value="Peru">Peru </option>
+	<option value="Philippines">Philippines</option>
+	<option value="Poland">Polland</option>
+	<option value="Portugal">Philippines</option>
+	<option value="Puerto Rico">Polland</option>
+	<option value="Qatar">Polland</option>
+	<option value="Reunion">Reunion</option>
+	<option value="Romania">Romania</option>
+	<option value="Russian Federation">Russian Federation</option>
+	<option value="Rwanda">Rwanda</option>
+	<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+	<option value="Saint Lucia">Saint Lucia</option>
+	<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+	<option value="Samoa">Samoa</option>
+	<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+	<option value="Saudi Arabia">Saudi Arabia</option>
+	<option value="Senegal">Senegal</option>
+	<option value="Serbia">Serbia</option>
+	<option value="Seychelles">Seychelles</option>
+	<option value="Sierra Leone">Sierra Leone</option>
+	<option value="Singapore">Singapore</option>
+	<option value="Slovak Republic (Slovakia)">Serbia</option>
+	<option value="Slovenia">Slovenia</option>
+	<option value="Solomon Islands">Serbia</option>
+	<option value="Somalia">Somalia</option>
+	<option value="South Africa">South Africa</option>
+	<option value="South Sudan">South Sudan</option>
+	<option value="Spain">Spain</option>
+	<option value="Sri Lanka">Sri Lanka</option>
+	<option value="Sudan">Sudan</option>
+	<option value="Suriname">Suriname</option>
+	<option value="Sweden">Sweden</option>
+	<option value="Switzerland">Switzerland</option>
+	<option value="Syria">Syria</option>
+	<option value="Tajikistan">Tajikistan</option>
+	<option value="Tanzania">Tanzania</option>
+	<option value="Thailand">Thailand</option>
+	<option value="Netherlands">Netherlands</option>
+	<option value="Timor Leste">Timor Leste</option>
+	<option value="Togo">Togo</option>
+	<option value="Trinidad & Tobago">Trinidad & Tobago</option>
+	<option value="Tunisia">Tunisia</option>
+	<option value="Turkey">Turkey</option>
+	<option value="Turkmenistan">Turkmenistan</option>
+	<option value="Turks & Caicos Islands">Turks & Caicos Islands</option>
+	<option value="Uganda">Uganda</option>
+	<option value="Ukraine">Ukraine</option>
+	<option value="United Arab Emirates">United Arab Emirates</option>
+	<option value="United States of America (USA)">United States of America</option>
+	<option value="Uruguay">Uruguay</option>
+	<option value="Uzbekistan">Uzbekistan</option>
+	<option value="Venezuela">Venezuela</option>
+	<option value="Vietnam">Vietnam</option>
+	<option value="Virgin Islands (UK)">Virgin Islands (UK)</option>
+	<option value="Virgin Islands (US)">Virgin Islands (US)</option>
+	<option value="Yemen">Yemen</option>
+	<option value="Zambia">Zambia</option>
+	<option value="Zimbabwe">Zimbabwe</option>
+	</select>
+	<br>
+	
+	<br>
+	12. Which age group are you in?<br>
+	<select id=agegroup" name="agegroup" required style="color:#000">  
+	<option value="" disabled selected>Select age group</option> 
+  	<option value="12 or Younger">12 years old or younger</option>
+  	<option value="13-17">13-17 years old</option>
+  	<option value="18-24">18-24 years old</option>
+  	<option value="25-34">25-34 years old</option>
+  	<option value="35-44">35-44 years old</option>
+  	<option value="45-54">45-54 years old</option>
+  	<option value="55-64">55-64 years old</option>
+  	<option value="65-74">65-74 years old</option>
+  	<option value="75 or older">75 years or older</option>
+	</select>
+	<br>
+	
+	<br>
+	13. Are you Male or Female?<br>
+    <input type="radio" required name="gender" value="M"> Male
+    <input type="radio" required name="gender" value="F">Female
+	<br>
+	
+	<br>
+	14. Are you married?<br>
+	<input type="radio" required name="married" value="Married"> Yes
+    <input type="radio" required name="married" value="Unmarried">No
+	<br>
+	
+	
+	<br>
+	15. What is your annual salary?<br>
+	<select id=salary" name="salary" required style="color:#000">
+	<option value="" disabled selected>Select a salary range</option>   
+  	<option value="$0-$24,999">$0-$24,999</option>
+  	<option value="$25,000-$49,999">$25,000-$49,999</option>
+  	<option value="$50,000-$74,999">$50,000-$74,999</option>
+  	<option value="$75,000-$99,999">$75,000-$99,999</option>
+  	<option value="$100,000-$124,999">$100,000-$124,999</option>
+  	<option value="$125,000-$149,999">$125,000-$149,999</option>
+  	<option value="$150,000-$174,999">$150,000-$174,999</option>
+  	<option value="$175,000-$199,999">$175,000-$199,999</option>
+  	<option value="$200,000 and up">$200,000 and up</option>
+	</select>
+	<br>
+	
+	<br>
+	16. How many hours per week do you work?<br>
+	<select id=workHours" name="workHours" required style="color:#000">   
+	<option value="" disabled selected>Select hours worked per week</option>
+	<option value="0" >0</option>
+  	<option value="1-5">1-5</option>
+  	<option value="6-10">6-10</option>
+  	<option value="11-15">11-15</option>
+  	<option value="16-20">16-20</option>
+  	<option value="21-25">21-25</option>
+  	<option value="26-30">26-30</option>
+  	<option value="31-35">31-35</option>
+  	<option value="36-40">36-40</option>
+  	<option value="morethan40">More than 40</option>
+	</select>
+	<br>
+	
+	<br> 
+	17. How many children do you have?<br>
+	<select id=numOfChildren" name="numOfChildren" required style="color:#000">  
+	<option value="" disabled selected>Select number of children</option> 
+	<option value="zero">0</option>
+  	<option value="one">1</option>
+  	<option value="two">2</option>
+  	<option value="three">3</option>
+  	<option value="four">4</option>
+  	<option value="five">5</option>
+  	<option value="sixorMore"> 6 or more</option>
+	</select>
+	<br>
+	
+	<br>
+	18. Do you have a learning disability?<br>
+	<select id=learnDis" name="learnDis" required style="color:#000">   
+	<option value="" disabled selected>Select learning disability</option>
+	<option value="ADHD" >ADHD</option>
+  	<option value="Autism/Autistic Spectrum">Autism/Autistic Spectrum</option>
+  	<option value="Dyslexia">Dyslexia</option>
+  	<option value="Dysgraphia">Dysgraphia</option>
+  	<option value="Dyscalculia">Dyscalculia</option>
+  	<option value="Auditory Processing Disorder">Auditory Processing Disorder</option>
+  	<option value="Language Processing Disorder">Language Processing Disorder</option>
+  	<option value="Non-Verbal Learning Disability">Non-Verbal Learning Disability</option>
+  	<option value="Other">Other</option>
+  	<option value="N/A">Not applicable</option>
+	</select>
+	<br>
+	
+	<br>
+	19. Do you have a physical disability?<br>
+	<select id=physDis" name="physDis" required style="color:#000">   
+	<option value="" disabled selected>Select physical disability</option>
+	<option value="Low vision" >Low vision</option>
+	<option value="Blindness" >Blindness</option>
+	<option value="Color blindness" >Color blindness</option>
+  	<option value="Hearing impaired">Hearing impaired</option>
+  <option value="Other">Other</option>
+  	<option value="N/A">Not applicable</option>
+	</select>
+	<br>
+	
+	<br>
+	20. Did you play any of the following sports at a professional or scholastic level
+    while enrolled in this online course?<br>
+	<select id=playSport" name="playSport" required style="color:#000">   
+	<option value="" disabled selected>Select a sport</option>
+	<option value="Football" >Football</option>
+	<option value="Basketball" >Basketball</option>
+	<option value="Baseball" >Baseball</option>
+	<option value="Soccer" >Soccer</option>
+  	<option value="Swimming">Swimming</option>
+    <option value="Other">Other</option>
+  	<option value="N/A">Not applicable</option>
+	</select>
+	<br>
+	
+	<br>
+	<h4>Section III: Prior Learning Experience</h4>
+	<h6>This section will ask you questions about your technical skills and prior learning experiences. Please answer all questions. </h6>
+	<br>
+	21. Rate your proficiency using the Internet/computer technology.<br>
+	<select id=cpuSkill" name="cpuSkill" required style="color:#000"> 
+	<option value="" disabled selected>Select proficiency level</option>  
+	<option value="poor">Poor</option>
+  	<option value="belowAverage">Below Average</option>
+  	<option value="average">Average</option>
+  	<option value="aboveAverage">Above Average</option>
+  	<option value="excellent">Excellent</option>
+	</select>
+	<br>
+	
+	<br>
+	22.Which is the highest level of education you have attained?<br>
+	<select id=eduLevel" name="eduLevel" required style="color:#000">   
+	<option value="" disabled selected>Select education level</option>
+  	<option value="lessThanHS">Less than high school degree</option>
+  	<option value="HighSchool">High School degree/GED</option>
+  	<option value="someCollege">Some college</option>
+  	<option value="AsscDegree">Associate degree</option>
+  	<option value="BachsDegree">Bachelor's degree</option>
+  	<option value="MastersDegree">Master's degree</option>
+  	<option value="PHD">PHD</option>
+	</select>
+	<br>
+	
+	<br>
+	23. Would you consider taking another online course?<br>
+	<input type="radio" name="anotherOnlineCourse" required value="willConsider"> Yes
+    <input type="radio" name="anotherOnlineCourse" required value="wontConsider">No
+	<br>
+	
+	<br> 
+	24. How would you best describe your learning style?<br>
+	<input type="radio" name="learningStyle" required value="Reading/Writing" style="color:#000">Reading/Writing
+    <input type="radio" name="learningStyle" required value="Auditory" style="color:#000">Auditory
+    <input type="radio" name="learningStyle" required value="Visual" style="color:#000">Visual 
+    <input type="radio" name="learningStyle" required value="Kinesthetic" style="color:#000"> Kinesthetic(Hand's on learning)
+	<br>
+	
+	
+	<br>
+	25. What learning format do you most prefer?</br>
+	<input type="radio" name="learnPref" required value="classroom" > Traditional Classroom
+    <input type="radio" name="learnPref" required value="online"> Online Learning
+    <input type="radio" name="learnPref" required value="hybrid"> A combination of both (Hybrid Learning)
+	<br>
+    
+  
+   
+	<br>
+	<input type="checkbox" name="consent" id="Consent" 
+	onchange="checked('sub')" value="agreeToConsent"> I understand that my identity will be anonymous and I
+	give consent for my survey responses to be publically displayed on this website and used for research purposes.<br>
+	<br> 
+
+
+   
+    <input type="submit" alignname="submit" value="Complete Survey" style="float:left; color: black;">
+    
+    
+	</form>
+    
+    <div class="col-sm-8">
+    
+    </div>
+    
+    
+  </div>
+  
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p> </p>
+</div>
+
+</body>
+</html>
